@@ -28,8 +28,8 @@ gulp.task('serve', ['sass'], function() {
     }
   });
 
-  gulp.watch('app/scss/*.scss', ['sass']);
-  gulp.watch('app/pug/*.pug', ['pug']);
+  gulp.watch('app/scss/*', ['sass']);
+  gulp.watch('app/pug/*', ['pug']);
 });
 
 gulp.task('default', ['sass', 'pug', 'serve']);
